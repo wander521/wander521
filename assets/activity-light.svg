@@ -319,8 +319,8 @@
 </rect>
 <rect x="836" y="70" width="11" height="11" rx="2" fill="#ebedf0" stroke="#d1d9e0" stroke-width=".5"><title>2026-10-06: contribution level 0</title>
 </rect>
-<rect x="852" y="70" width="11" height="11" rx="2" fill="#40c463" stroke="#d1d9e0" stroke-width=".5"><title>2026-10-13: contribution level 2</title>
-<animate attributeName="fill" values="#40c463;#40c463;#ebedf0;#ebedf0;#40c463" keyTimes="0;0.47321;0.47421;.98;1" dur="22s" repeatCount="indefinite"/>
+<rect x="852" y="70" width="11" height="11" rx="2" fill="#216e39" stroke="#d1d9e0" stroke-width=".5"><title>2026-10-13: contribution level 4</title>
+<animate attributeName="fill" values="#216e39;#216e39;#ebedf0;#ebedf0;#216e39" keyTimes="0;0.47321;0.47421;.98;1" dur="22s" repeatCount="indefinite"/>
 </rect>
 <rect x="20" y="86" width="11" height="11" rx="2" fill="#ebedf0" stroke="#d1d9e0" stroke-width=".5"><title>2025-10-15: contribution level 0</title>
 </rect>
