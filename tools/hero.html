@@ -1,34 +1,13 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="/font/400.css">
+<html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="/font/400.css">
 <style>
-*{box-sizing:border-box}html,body{margin:0;width:1200px;height:480px;overflow:hidden;background:#0d1117;color:#f6ecdf}body{font-family:'Noto Serif SC',Georgia,serif}.name{position:absolute;left:58px;top:46px;margin:0;font-size:28px;font-weight:400;letter-spacing:.04em}.name span{font:16px -apple-system,BlinkMacSystemFont,sans-serif;color:#bcc9d8;margin-left:16px;letter-spacing:.02em}.message{position:absolute;left:54px;top:116px;margin:0;font-family:Georgia,'Noto Serif SC',serif;font-size:76px;font-weight:400;line-height:1.08;letter-spacing:-.025em}.role{position:absolute;left:58px;top:308px;font:19px -apple-system,BlinkMacSystemFont,sans-serif;color:#bcc9d8;letter-spacing:.01em}.robot{position:absolute;right:20px;top:0;width:530px;height:385px}.flow{position:absolute;left:58px;right:58px;bottom:32px;height:50px;display:flex;align-items:center;border-top:1px solid #344152;padding-top:18px}.step{flex:1;display:flex;gap:12px;align-items:center;font:15px -apple-system,BlinkMacSystemFont,sans-serif;color:#bfcbd9}.dot{width:6px;height:6px;border-radius:50%;background:#728196}.step.active{color:#f6ecdf}.step.active .dot{background:#d8a56b}.step::after{content:'';display:block;width:70px;height:1px;background:#536070;margin-left:18px}.step:last-child::after{display:none}.packet{position:absolute;bottom:27px;width:28px;height:2px;background:#d8a56b;opacity:0}.studio-word{position:absolute;top:49px;right:48px;color:#aebfd3;font:12px -apple-system,BlinkMacSystemFont,sans-serif;letter-spacing:.05em}
-.step:nth-child(4)::after{display:none}
-</style>
-<script type="importmap">{"imports":{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}</script>
-</head>
-<body>
-<p class="name">汪博<span>WANG BO</span></p>
-<h1 class="message">From intent<br>to action.</h1>
-<p class="role">AI Agents / Embodied Intelligence</p>
-<canvas class="robot" aria-label="Silver humanoid robot"></canvas>
+*{box-sizing:border-box}html,body{margin:0;width:1200px;height:480px;overflow:hidden;background:#110f0d;color:#f6ecdf}body{font-family:Georgia,'Noto Serif SC',serif}.name{position:absolute;left:56px;top:43px;margin:0;font-size:27px;font-weight:400;letter-spacing:.01em;z-index:2}.name span{font-family:'Noto Serif SC',serif;font-size:20px;color:#bdb09f;margin-left:18px}.message{position:absolute;left:52px;top:125px;margin:0;font-size:70px;font-weight:400;line-height:1.08;letter-spacing:-.025em;z-index:2}.role{position:absolute;left:56px;top:310px;font:18px -apple-system,BlinkMacSystemFont,sans-serif;color:#bdb09f;z-index:2}.robot-video{position:absolute;left:515px;top:-95px;width:720px;height:645px;object-fit:fill;mask-image:linear-gradient(to right,transparent 0,#000 16%,#000 93%,transparent 100%)}.flow{position:absolute;left:0;right:0;bottom:0;height:54px;display:flex;align-items:center;border-top:1px solid #504234;padding:0 56px;background:#110f0d;z-index:3}.step{flex:1;display:flex;gap:11px;align-items:center;font:15px -apple-system,BlinkMacSystemFont,sans-serif;color:#bdb09f}.dot{width:6px;height:6px;border-radius:50%;background:#948470}.step.active{color:#f6ecdf}.step.active .dot{background:#d8a56b}.step::after{content:'';display:block;width:64px;height:1px;background:#504234;margin-left:16px}.step:nth-child(4)::after{display:none}.packet{position:absolute;bottom:12px;width:28px;height:2px;background:#d8a56b;opacity:0}
+</style></head><body>
+<img class="robot-video" src="/tools/source-frames/001.png" alt="Close-up of the silver robot">
+<p class="name">WANG BO<span>汪博</span></p><h1 class="message">From intent<br>to action.</h1><p class="role">AI Agents / Embodied Intelligence</p>
 <div class="flow"><span class="step"><i class="dot"></i>Interaction</span><span class="step"><i class="dot"></i>Agent orchestration</span><span class="step"><i class="dot"></i>Skills &amp; tools</span><span class="step"><i class="dot"></i>Robot execution</span><i class="packet"></i></div>
-<script type="module">
-import * as T from 'three';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
-const renderer=new T.WebGLRenderer({canvas:document.querySelector('canvas'),alpha:true,antialias:true,preserveDrawingBuffer:true});renderer.setSize(530,385,false);renderer.setPixelRatio(1.5);renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.16;
-const scene=new T.Scene(),camera=new T.PerspectiveCamera(38,530/385,.03,30);
-const studio=new T.Scene();studio.background=new T.Color(0x030303);
-const card=(w,h,p,color)=>{const mesh=new T.Mesh(new T.PlaneGeometry(w,h),new T.MeshBasicMaterial({color:new T.Color().setRGB(...color),side:T.DoubleSide}));mesh.position.set(...p);mesh.lookAt(0,1,0);studio.add(mesh)};
-card(2.4,1.4,[.2,3.2,.3],[5,5.4,6]);card(1.8,2.8,[3,2,2.2],[3,3.2,3.5]);card(.7,2.8,[-2,1.8,1.4],[2.8,3.1,3.5]);card(.3,2.5,[1.8,1.7,-2],[3,1.8,.8]);
-const pmrem=new T.PMREMGenerator(renderer),env=pmrem.fromScene(studio,.04);scene.environment=env.texture;scene.environmentIntensity=.95;pmrem.dispose();
-scene.add(new T.HemisphereLight(0xc7d7eb,0x1d2229,.8));const key=new T.SpotLight(0xeaf2ff,150,14,.4,.65,1.8);key.position.set(.35,3.7,.55);key.target.position.set(.2,.7,0);scene.add(key,key.target);const fill=new T.DirectionalLight(0xd8e5f5,1.5);fill.position.set(2,2,3);scene.add(fill);const rim=new T.DirectionalLight(0xaec4df,1.8);rim.position.set(-1.5,2,-2);scene.add(rim);
-const model=(await new GLTFLoader().loadAsync('/model/g1-stage.glb')).scene;model.position.set(0,.793,0);scene.add(model);const joints=new Map();model.traverse(o=>{if(o.userData.joint){joints.set(o.name,o);o.userData.restQuaternion=o.quaternion.clone()}if(o instanceof T.Mesh){o.material=new T.MeshStandardMaterial({color:o.userData.dark?0x303a46:0xc1c9d1,metalness:o.userData.dark?.65:.84,roughness:o.userData.dark?.35:.25})}});
-const line=new T.LineLoop(new T.BufferGeometry().setFromPoints(Array.from({length:96},(_,i)=>new T.Vector3(Math.cos(i/96*Math.PI*2)*.72,.006,Math.sin(i/96*Math.PI*2)*.72))),new T.LineBasicMaterial({color:0x536070,transparent:true,opacity:.6}));scene.add(line);
-const joint=(name,value)=>{const j=joints.get(name);if(j)j.quaternion.copy(j.userData.restQuaternion).multiply(new T.Quaternion().setFromAxisAngle(new T.Vector3(...j.userData.axis),value))};
-window.renderFrame=phase=>{const cycle=phase*Math.PI*2,gesture=Math.pow(Math.sin(phase*Math.PI),2);model.rotation.y=-.22+Math.sin(cycle)*.18;joint('neck_yaw_joint',Math.sin(cycle)*.12);joint('neck_pitch_joint',-.08+gesture*.1);joint('right_shoulder_pitch_joint',-.55-gesture*.5);joint('right_shoulder_roll_joint',-.1-gesture*.1);joint('right_elbow_joint',.1+gesture*.65);joint('right_wrist_roll_joint',.45+gesture*.4);joint('right_wrist_yaw_joint',-.3+Math.sin(cycle*2)*.15);joint('left_elbow_joint',.25+gesture*.08);joint('waist_yaw_joint',Math.sin(cycle)*.05);camera.position.set(1.8+Math.sin(cycle)*.08,1.2,1.9);camera.lookAt(0,.82,0);renderer.render(scene,camera);const selected=Math.floor(phase*4)%4;document.querySelectorAll('.step').forEach((e,i)=>e.classList.toggle('active',i===selected));const packet=document.querySelector('.packet');packet.style.left=(phase*1040)+'px';packet.style.opacity=String(Math.sin(phase*Math.PI)*.9)};
-await document.fonts.ready;window.renderFrame(0);window.ready=true;
-</script>
-</body></html>
+<script>
+const robot=document.querySelector('.robot-video');
+window.renderFrame=async phase=>{const index=Math.min(63,Math.round((phase<.5?phase*2:(1-phase)*2)*63))+1;robot.src='/tools/source-frames/'+String(index).padStart(3,'0')+'.png';await robot.decode();const selected=Math.floor(phase*4)%4;document.querySelectorAll('.step').forEach((e,i)=>e.classList.toggle('active',i===selected));const packet=document.querySelector('.packet');packet.style.left=(56+phase*1030)+'px';packet.style.opacity=String(Math.sin(phase*Math.PI)*.9)};
+(async()=>{await document.fonts.ready;await window.renderFrame(.32);window.ready=true})();
+</script></body></html>

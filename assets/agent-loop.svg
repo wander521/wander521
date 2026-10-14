@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="174" viewBox="0 0 1000 174" role="img" aria-label="Language and perception flow through an Agent, skills, robot execution and feedback">
+<title>From interaction to execution</title>
+<defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#8093ab"/></marker></defs>
+<rect width="1000" height="174" fill="#0d1117" rx="6"/>
+<g fill="#161b22" stroke="#344152"><rect x="25" y="34" width="182" height="72" rx="6"/><rect x="281" y="34" width="182" height="72" rx="6"/><rect x="537" y="34" width="182" height="72" rx="6"/><rect x="793" y="34" width="182" height="72" rx="6"/></g>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#f6ecdf" font-size="18"><text x="116" y="63">Interaction</text><text x="372" y="63">Agent</text><text x="628" y="63">Skills &amp; Tools</text><text x="884" y="63">Robot</text></g>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#bcc9d8" font-size="12"><text x="116" y="85">Voice · Vision · Context</text><text x="372" y="85">Plan · Route · Schedule</text><text x="628" y="85">Navigate · Detect · Act</text><text x="884" y="85">Gateway · Adapters</text></g>
+<g fill="none" stroke="#8093ab" stroke-width="1.5" marker-end="url(#arrow)"><path d="M207 70H277"/><path d="M463 70H533"/><path d="M719 70H789"/><path d="M884 106V140H116V110"/></g>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#bcc9d8" font-size="12"><text x="500" y="161">State feedback · Progress · Results</text></g>
+<style>@media(prefers-reduced-motion:reduce){.signal{display:none}}</style><circle class="signal" r="4" fill="#d8a56b"><animateMotion path="M207 70H281H463H537H719H793H884V140H116V106" dur="7s" repeatCount="indefinite"/></circle>
+</svg>

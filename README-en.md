@@ -1,8 +1,8 @@
-[中文](README.md) · **English**
+**English** · [中文](README-zh.md)
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero.png">
-  <img src="assets/hero.gif" width="100%" alt="Wang Bo — AI Agents and Embodied Intelligence. From intent to action: interaction, planning, skills and robot execution.">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-closeup.png">
+  <img src="assets/hero-closeup.gif" width="100%" alt="Wang Bo — AI Agents and Embodied Intelligence. From intent to action: interaction, planning, skills and robot execution.">
 </picture>
 
 # Wang Bo · 汪博
@@ -17,7 +17,7 @@ I led the design and development of **RoboClaw, an embodied AI data collection s
 
 ## From interaction to execution
 
-**Language & perception → Agent orchestration → Skills & tools → Control gateway → Robot execution & feedback**
+![Agent execution and feedback loop](assets/agent-loop.svg)
 
 - **Agents & interaction:** Nanobot task orchestration, skills and tool calls, real-time voice with interruption handling, conversation state, scheduled tasks and reminders.
 - **Robots & execution:** Unitree G1 and Leju Kuavo 4PRO MaxA adaptation, BrainCo dexterous hand control, integration with SLAM mapping and localization services, waypoint navigation, exhibition tours and route inspection.
@@ -63,6 +63,10 @@ Connects course content, classroom teaching, learning progress and robot experim
 
 [Explore the project & demos →](https://wander521.github.io/robot-portfolio/projects/embodied-ai-training/)
 
+## Engineering Stack
+
+![Python](assets/badges/python.svg) ![FastAPI](assets/badges/fastapi.svg) ![ROS 2](assets/badges/ros.svg) ![Android](assets/badges/android.svg) ![MySQL](assets/badges/mysql.svg) ![Redis](assets/badges/redis.svg) ![Java](assets/badges/openjdk.svg)
+
 ## Technical foundation
 
 | Area | Technologies & capabilities |
@@ -82,6 +86,27 @@ Connects course content, classroom teaching, learning progress and robot experim
 </details>
 
 **Wuhan University** · Bachelor's in Geographic Information Systems / Master's in Surveying and Mapping Engineering, with a focus on GIS
+
+## Community
+
+![Telegram · Coming soon](assets/badges/telegram.svg) ![Discord · Coming soon](assets/badges/discord.svg) ![Blog · Coming soon](assets/badges/blog.svg)
+
+## Content & Platforms
+
+![CSDN](assets/badges/csdn.svg) ![Juejin](assets/badges/juejin.svg) ![Zhihu](assets/badges/zhihu.svg) ![Bilibili](assets/badges/bilibili.svg) ![InfoQ](assets/badges/infoq.svg) ![Jianshu](assets/badges/jianshu.svg) ![SegmentFault](assets/badges/segmentfault.svg) ![Gitee](assets/badges/gitee.svg)
+
+<sub>New channels are coming soon. Public profile links will be added when available.</sub>
+
+## GitHub Activity
+
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/activity-dark-static.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/activity-light-static.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
+  <img src="assets/activity-light.svg" width="100%" alt="A snake animation generated from wander521's real public GitHub contribution calendar.">
+</picture>
+
+<sub>Built from my public contribution calendar and refreshed daily. Much of my project work lives outside public GitHub repositories.</sub>
 
 ## Let's make robots act
 
