@@ -1,8 +1,8 @@
 [English](README.md) · **中文**
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-closeup.png">
-  <img src="assets/hero-closeup.gif" width="100%" alt="汪博 · AI Agent 与具身智能开发。让想法，在现实中行动。语言交互、任务编排、Skills 调用与机器人执行。">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-robot.png">
+  <img src="assets/hero-robot.gif" width="100%" alt="汪博 · AI Agent 与具身智能开发。让想法，在现实中行动。语言交互、任务编排、Skills 调用与机器人执行。">
 </picture>
 
 # 汪博 · Wang Bo

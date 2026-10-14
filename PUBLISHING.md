@@ -5,8 +5,8 @@ This repository supplies the profile README for `https://github.com/wander521`.
 - `README.md`: default English profile.
 - `README-zh.md`: equivalent Chinese version, linked from the default profile.
 - `README-en.md`: English compatibility entry.
-- `assets/hero-closeup.gif`: close-up robot loop derived from the owner's reference recording.
-- `assets/hero-closeup.png`: reduced-motion fallback.
+- `assets/hero-robot.gif`: close-up robot loop derived from the owner's reference recording.
+- `assets/hero-robot.png`: reduced-motion fallback.
 - `assets/CREDITS.md`: model and font attribution, with included license files.
 
 The profile repository must be **public** and named **wander521/wander521**. Its root README.md is displayed on the account page. Publishing these files does not rebuild or modify the separate personal website.

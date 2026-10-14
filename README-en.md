@@ -1,8 +1,8 @@
 **English** · [中文](README-zh.md)
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-closeup.png">
-  <img src="assets/hero-closeup.gif" width="100%" alt="Wang Bo — AI Agents and Embodied Intelligence. From intent to action: interaction, planning, skills and robot execution.">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-robot.png">
+  <img src="assets/hero-robot.gif" width="100%" alt="Wang Bo — AI Agents and Embodied Intelligence. From intent to action: interaction, planning, skills and robot execution.">
 </picture>
 
 # Wang Bo · 汪博
